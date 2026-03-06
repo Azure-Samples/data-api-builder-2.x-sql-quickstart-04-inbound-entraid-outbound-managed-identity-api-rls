@@ -132,3 +132,13 @@ To restrict access to rows where the Owner matches the user's subject claim:
 | `web/config.js` | Adds `clientId` and `tenantId` for MSAL configuration |
 
 > QS3 had no login at all — the web was fully anonymous. QS4 introduces the entire auth flow: MSAL, auto-redirect, bearer tokens, `authenticated` role, and per-user policies.
+
+## Related Quickstarts
+
+| Quickstart | Inbound | Outbound | Security |
+|------------|---------|----------|----------|
+| [Quickstart 1](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-01-inbound-anonymous-outbound-sql-auth) | Anonymous | SQL Auth | — |
+| [Quickstart 2](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-02-inbound-anonymous-outbound-managed-identity) | Anonymous | Managed Identity | — |
+| [Quickstart 3](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-03-inbound-entraid-outbound-managed-identity) | Entra ID | Managed Identity | — |
+| **This repo** | Entra ID | Managed Identity | API RLS |
+| [Quickstart 5](https://github.com/Azure-Samples/data-api-builder-2.x-sql-quickstart-05-inbound-entraid-outbound-managed-identity-db-rls) | Entra ID | Managed Identity | DB RLS |
